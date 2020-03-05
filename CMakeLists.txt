@@ -7,3 +7,7 @@ if (MSVC)
 else()
 	add_compile_options(-Wall -Wextra -pedantic)
 endif()
+
+enable_testing()
+add_executable(tester tester.cpp)
+add_test(Tester tester)
